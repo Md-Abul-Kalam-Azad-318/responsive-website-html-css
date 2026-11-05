@@ -1,16 +1,17 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Montserrat;
     font-weight: 400;
 }
-nav{
+
+nav {
     display: flex;
     background-color: #1C2833;
     height: 80px;
@@ -19,14 +20,17 @@ nav{
     align-items: center;
     padding: 0 50px 0 80px;
 }
-nav ul{
+
+nav ul {
     display: flex;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 0 8px;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
@@ -36,36 +40,42 @@ nav li a{
     transition: 0.5s;
     text-transform: uppercase;
 }
-nav li a:hover, nav ul li a.active{
-   color: #566573;
+
+nav li a:hover,
+nav ul li a.active {
+    color: #566573;
 }
-.logo{
+
+.logo {
     font-size: 25px;
     font-weight: bold;
     color: white;
 }
-.menu-btn{
+
+.menu-btn  {
     color: white;
     font-size: 22px;
     cursor: pointer;
     display: none;
 }
 
-#click{
+.menu-btn .fa-xmark{
+    display: none;
+}
+
+#click {
     display: none;
 }
 
 
 /* Responsive work starts */
 
-@media only screen and (max-width: 940px){
-   .menu-btn{
-    display: block;
+@media only screen and (max-width: 940px) {
+    .menu-btn {
+        display: block;
+    }
 
-
-   }
-   
-    nav ul{
+    nav ul {
         position: fixed;
         top: 80px;
         left: -100%;
@@ -77,21 +87,28 @@ nav li a:hover, nav ul li a.active{
         text-align: center;
         transition: all 0.5s ease;
     }
-    #click:checked ~ .menu-btn svg::before{
-        content: "\f00d";
-    }
 
-    #click:checked ~ ul{
+     #click:checked + .menu-btn .fa-bars{
+        display: none;
+     }
+     #click:checked + .menu-btn .fa-xmark{
+        display: inline-block;
+     }
+
+    #click:checked~ul {
         left: 0%;
     }
 
-    nav ul li{
+    nav ul li {
         margin: 50px 0;
     }
-    nav ul li a{
-        font-size: 22px ;
+
+    nav ul li a {
+        font-size: 22px;
     }
-    nav ul li a:hover, nav ul li a.active{
+
+    nav ul li a:hover,
+    nav ul li a.active {
         background: none;
         color: red;
     }
@@ -100,8 +117,8 @@ nav li a:hover, nav ul li a.active{
 
 /* header section code starts here */
 
-header{
-    background-image: url('images/butterfly.webp') ;
+header {
+    background-image: url('images/banner.jpg');
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
