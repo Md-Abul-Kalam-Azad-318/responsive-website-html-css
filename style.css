@@ -420,6 +420,37 @@ form p{
     letter-spacing: 0.1em;
 }
 
+/* Seventh Section code start */
+
+#seventh-section{
+    padding: 100px 0;
+}
+
+#takeCare-parent{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-takeCare-imgbox{
+    width: 100%;
+}
+.single-takeCare-imgbox img{
+    width: 100%;
+}
+.single-takeCare h3{
+    font-size: 30px;
+}
+.single-takeCare p{
+    margin: 20px 0;
+}
+.single-takeCare ul li{
+    list-style-position:inside;
+    margin: 10px 0;
+}
+
 
 
 
@@ -499,7 +530,21 @@ form{
 .first-single-match{
     text-align: center;
 }
+/* Finished Projects section work */
+
+/* Start Take Care Section code */
+#takeCare-parent{
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+} 
+.single-takeCare{
+    margin-bottom: 70px;
 }
+}
+
+
+
 
 
 
@@ -572,4 +617,16 @@ form{
     margin-right: 70px;
 }
 
+/* Finished Match Projects Section code */
+
+
+/* Start Take Care Section code */
+#takeCare-parent{
+    display: block;
+    margin-left: 70px;
+    margin-right: 70px;
+} 
+.single-takeCare{
+    margin-bottom: 80px;
+}
 }
