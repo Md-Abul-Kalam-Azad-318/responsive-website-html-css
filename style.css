@@ -236,6 +236,9 @@ header {
 .more-about-vanilla ul{
     margin: 20px 0;
 }
+.more-about-vanilla ul li{
+    list-style-position: inside;
+}
 .more-about-vanilla a{
     text-decoration: none;
     font-size:18px;
@@ -451,7 +454,54 @@ form p{
     margin: 10px 0;
 }
 
+/* Footer Part Code start */
 
+footer{
+    background-color: #154360;
+    padding: 100px 0 50px 0;
+}
+#footer-parent{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 80px;
+    color:white;
+}
+.single-footer{
+    width: 100%;
+}
+.single-footer h5{
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+.single-footer-2 p{
+    margin: 15px;
+}
+.single-footer-2 a{
+    text-decoration: none;
+    color: white;
+}
+.single-footer-3 ul{
+    display: flex;
+}
+.single-footer-3 ul li{
+    list-style: none;
+}
+.single-footer-3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.single-footer-3 ul li a svg{
+    margin:0 5px;
+    background-color: #0a273863;
+    padding: 5px;
+}
+.single-footer h5 span{
+    color: yellow;
+}
+.single-footer-1 p{
+    text-align: justify;
+}
 
 
 
@@ -541,6 +591,25 @@ form{
 .single-takeCare{
     margin-bottom: 70px;
 }
+/* Finished Take Care Section Code */
+
+/* Start Footer Section code */
+#footer-parent{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.single-footer{
+    text-align: center;
+}
+.single-footer-1 p{
+    text-align: justify;
+}
+.single-footer-3 ul{
+    display: flex;
+    justify-content: center;
+}
 }
 
 
@@ -628,5 +697,15 @@ form{
 } 
 .single-takeCare{
     margin-bottom: 80px;
+}
+/* Finished Take Care Section code */
+
+/* Start Footer Section code */
+#footer-parent{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.single-footer-1 p{
+    text-align: justify;
 }
 }
